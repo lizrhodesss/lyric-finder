@@ -21,7 +21,7 @@ function App() {
         <Nav />
         <Switch>
           <Route exact path="/">
-            <Home />
+            <Home songs={songs}/>
           </Route>
           <Route path="/form">
             <Form />
