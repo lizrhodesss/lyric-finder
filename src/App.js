@@ -7,13 +7,15 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
 
-  const [songs, setSongs] = useState([])
+  let [songs, setSongs] = useState([])
 
   useEffect(() => {
-    fetch("http://localhost:3000/songs")
+    fetch("http://localhost:8004/songs")
     .then(response => response.json())
     .then(songs => setSongs(songs))
   }, [])
+
+  console.log(songs)
 
   return (
     <Router>
@@ -24,7 +26,7 @@ function App() {
             <Home />
           </Route>
           <Route path="/form">
-            <Form />
+            <Form songs={songs} setSongs={setSongs}/>
           </Route>
           <Route path="/search">
             <Search />
