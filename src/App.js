@@ -4,16 +4,19 @@ import Nav from './Components/Nav';
 import Form from './Components/Form';
 import Search from './Components/Search';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from './Components/Home'
+// import SongCard from './SongCard'
 
 function App() {
-
   const [songs, setSongs] = useState([])
 
+
   useEffect(() => {
-    fetch("http://localhost:3000/songs")
+    fetch("http://localhost:8004/songs")
     .then(response => response.json())
-    .then(songs => setSongs(songs))
+    .then(data => setSongs(data))
   }, [])
+ 
 
   return (
     <Router>
@@ -35,10 +38,10 @@ function App() {
   );
 }
 
-const Home = () => (
-  <div>
-    <h1>Home Page</h1>
-  </div>
-);
+// const Home = () => (
+//   <div>
+//     <h1>Home Page</h1>
+//   </div>
+// );
 
 export default App;
