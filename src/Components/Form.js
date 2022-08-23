@@ -2,10 +2,10 @@ import React from 'react';
 import '../App.css';
 import SongForm from './SongForm';
 
-function Form() {
+function Form({songs, setSongs}) {
   return (
     <div>
-        <SongForm />
+        <SongForm songs={songs} setSongs={setSongs}/>
     </div>
   );
 }

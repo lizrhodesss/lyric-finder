@@ -8,7 +8,9 @@ import Home from './Components/Home'
 // import SongCard from './SongCard'
 
 function App() {
-  const [songs, setSongs] = useState([])
+
+  let [songs, setSongs] = useState([])
+
 
 
   useEffect(() => {
@@ -17,6 +19,8 @@ function App() {
     .then(data => setSongs(data))
   }, [])
  
+
+  console.log(songs)
 
   return (
     <Router>
@@ -27,7 +31,7 @@ function App() {
             <Home songs={songs}/>
           </Route>
           <Route path="/form">
-            <Form />
+            <Form songs={songs} setSongs={setSongs}/>
           </Route>
           <Route path="/search">
             <Search />
