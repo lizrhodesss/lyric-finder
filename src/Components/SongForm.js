@@ -23,20 +23,20 @@ function SongForm({songs, setSongs}) {
         setAlbum("")
         setLyrics("")
 
-        // fetch("http://localhost:8004/songs", {
-        //     method: 'POST',
-        //     headers: {
-        //         "Content-Type": 'application.json',
-        //     },
-        //     body: JSON.stringify(newSong)
-        // })
-        // .then(response => response.json())
-        // .then(setSongs([...songs, newSong]))
+        fetch("http://localhost:8004/songs", {
+            method: 'POST',
+            headers: {
+                "Content-Type": 'application.json',
+            },
+            body: JSON.stringify(newSong)
+        })
+        .then(response => response.json())
+        .then(setSongs([...songs, newSong]))
 
-        // setTitle("")
-        // setArtist("")
-        // setAlbum("")
-        // setLyrics("")
+        setTitle("")
+        setArtist("")
+        setAlbum("")
+        setLyrics("")
     }
 
     return (
