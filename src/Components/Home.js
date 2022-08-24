@@ -7,7 +7,6 @@ function Home({songs}) {
         <div>
             <h1>Lyric Finder</h1>
             {songs.map(song => (<SongCard song={song} key={song.id} />))}
-            console.log(song)
         </div>
     )
 
