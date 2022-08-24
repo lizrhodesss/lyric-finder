@@ -34,7 +34,7 @@ function App() {
             <Search songs={songs}/>
           </Route>
           <Route path="/ranking">
-            <Ranking songs={rankedSongs} setSongs={setSongs} rankUp={rankUp}/>
+            <Ranking songs={songs} setSongs={setSongs} />
           </Route>
         </Switch>
       </div>
