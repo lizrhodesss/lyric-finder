@@ -1,15 +1,19 @@
-
 import React, { useState } from "react"
 
 function SongCard ({song}) {
     const [showLyrics, setShowLyrics] = useState(false)
+    const [likeToggle, setLikeToggle] = useState(false)
 
-   const handleLyrics= () => {
+    const handleLyrics= () => {
         setShowLyrics(showLyrics => !showLyrics)
+    }
+    const handleToggle = () => {
+        setLikeToggle(likeToggle => !likeToggle)
+        console.log('hey there')
     }
 
 return (
-    <li>
+    <div>
         <div onClick={handleLyrics} className="image">
             <img alt="album" src={song.image}/>
         </div>
@@ -20,9 +24,15 @@ return (
          </div> 
          <div className="lyrics">
         </div> 
-    </li>
+        {showLyrics ? (
+        <button onClick={handleToggle} className="likeToggle" >I dig it!</button>
+        ) : (
+        <button onClick={handleToggle}>Not for me, NEXT!</button>
+        )}  
+    </div>
 )
 }
+
 
 
 
