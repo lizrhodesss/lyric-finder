@@ -34,18 +34,12 @@ function App() {
             <Form songs={songs} setSongs={setSongs}/>
           </Route>
           <Route path="/search">
-            <Search />
+            <Search songs={songs}/>
           </Route>
         </Switch>
       </div>
     </Router>
   );
 }
-
-// const Home = () => (
-//   <div>
-//     <h1>Home Page</h1>
-//   </div>
-// );
 
 export default App;
