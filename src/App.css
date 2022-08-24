@@ -108,3 +108,58 @@ button{
 .submit-button{
   padding-top: 15px;
 }
+
+.likeToggle{
+  width: 150px;
+  height: 25px;
+  border-radius: 60px;
+  background-color: rgb(97, 167, 230);
+  color: white;
+  font-size: 15px;
+  border: none;
+  font-family: Franklin Gothic heavy, Arial
+}
+
+.lyrics{
+  font-size: 17px;
+  font-family: Franklin Gothic Demi, Arial;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 10em;
+  margin-right: 10em;
+  border-style: solid;
+  border-color: rgb(207, 207, 207);
+  border-radius: 20px;
+  border-top: 25em;
+  border-bottom: 25em;
+  line-height:150%
+
+}
+
+#my_div > div {
+  height: 50px;
+  width: 50px;
+  background-color: #ccc;}
+
+.artist{
+  font-size: 20px;
+  font-family: Franklin Gothic heavy, Arial;
+  font-weight: bold;
+  
+}
+
+.title{
+  font-family: Franklin Gothic heavy, Arial;
+  font-size: 25px  
+}
+
+.header{
+  font-size: 50px;
+  font-family: Franklin Gothic heavy, Arial;
+  font-weight: bold;
+}
+/* 
+.image{
+  height: 200px;
+  width: 200px;
+} */
