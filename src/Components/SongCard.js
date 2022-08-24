@@ -11,28 +11,57 @@ function SongCard ({song}) {
         setLikeToggle(likeToggle => !likeToggle)
     }
 
-return (
-    <div>
-        <br></br>
-        <br></br>
-        <div className="image" onMouseLeave={handleLyrics}>
-            <img onMouseEnter={handleLyrics} alt="album" src={song.image}/>
+
+
+    return (
+        <div className="gridContainer">
+            <img className="image"onMouseEnter={handleLyrics} alt="album" src={song.image} onMouseLeave={handleLyrics}/>
+            <div>
+                {likeToggle ? (
+                <button onClick={handleToggle} className="likeToggle" >I dig it!</button>
+                ) : (
+                <button onClick={handleToggle} className="likeToggle" >Not for me, NEXT!</button>
+                )} 
+            </div>
+            <div className="songTitle">{song.title}</div>
+            <div className="artist">{song.artist}</div>
+            <p className="lyrics">{showLyrics ? song.lyrics : null}</p>
+            
         </div>
-        <div>
-        {likeToggle ? (
-        <button onClick={handleToggle} className="likeToggle" >I dig it!</button>
-        ) : (
-        <button onClick={handleToggle} className="likeToggle" >Not for me, NEXT!</button>
-        )}
-        </div>  
-        <br></br>
-           <div className="title">{song.title} </div>
-           <div className="artist">{song.artist}</div>
-           <p className="lyrics">{showLyrics ? song.lyrics : null}</p>
-        <br></br>
-    </div>
-)
-}
+    )
+    }
+
+
+
+
+
+
+
+
+
+
+// return (
+//     <div className="gridContainer">
+//         <br></br>
+//         <br></br>
+//         <div>
+//             <img className="image"onMouseEnter={handleLyrics} alt="album" src={song.image} onMouseLeave={handleLyrics}/>
+//         </div>
+//         <div>
+//         {likeToggle ? (
+//         <button onClick={handleToggle} className="likeToggle" >I dig it!</button>
+//         ) : (
+//         <button onClick={handleToggle} className="likeToggle" >Not for me, NEXT!</button>
+//         )}
+//         </div>  
+//         <br></br>
+//            <div className="title">{song.title}</div>
+//            <div className="artist">{song.artist}</div>
+//            <p className="lyrics">{showLyrics ? song.lyrics : null}</p>
+//         <br></br>
+//     </div>
+// )
+// }
 
 
 

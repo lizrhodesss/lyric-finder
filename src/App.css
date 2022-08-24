@@ -85,7 +85,6 @@ input{
 }
 
 .title{
-  /* padding-left: 150px; */
   font-size: 20px;
   text-align: center;
   align-items: center;
@@ -128,11 +127,13 @@ button{
   margin-left: 10em;
   margin-right: 10em;
   border-style: solid;
-  border-color: rgb(207, 207, 207);
+  border-width: 5px;
+  border-color: rgb(97, 167, 230);
   border-radius: 20px;
   border-top: 25em;
   border-bottom: 25em;
-  line-height:150%
+  line-height:175%;
+  
 
 }
 
@@ -148,18 +149,39 @@ button{
   
 }
 
-.title{
+.songTitle{
   font-family: Franklin Gothic heavy, Arial;
   font-size: 25px  
 }
 
-.header{
-  font-size: 50px;
-  font-family: Franklin Gothic heavy, Arial;
-  font-weight: bold;
+.pageTitle{
+  font-size: 90px;
+  font-family: monospace, Arial;
+  font-weight: 900;
+  text-shadow: 5px 5px rgb(97, 167, 230);
+  opacity: 0.6;
 }
-/* 
+
+.header{
+  font-size: 40px;
+  font-family: monospace, Arial;
+  font-weight: bold;
+  text-shadow: 3px 3px rgb(97, 167, 230);
+  opacity: 0.6;
+  margin-bottom: 20px
+}
+
 .image{
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 300px;
+}
+
+.nav-links{
+  font-family: monospace , Arial;
+  font-size: 15px  
+}
+/* .gridContainer{
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-auto-rows: minmax(100px, auto)
 } */
