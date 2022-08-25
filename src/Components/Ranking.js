@@ -1,15 +1,16 @@
-import React, { useState, setState } from "react";
+import React, { useState } from "react";
 import RankCard from "./RankCard";
 
 
-function Ranking({songs, setSongs, rankUp}) {
-    
-    return (
-        <ol className="rankedNumbers">
-            {songs.map(song => (<RankCard song={song} songs={songs} rankUp={rankUp} key={song.id} />))}
-        </ol>
-    )
+// function Ranking({songs, rankUp}) {
 
-}
 
-export default Ranking
+//     return (
+//         <div className="rankedNumbers">
+//             {songs.map(song => (<RankCard song={song} songs={songs} rankUp={rankUp} key={song.id} />))}
+//         </div>
+//     )
+
+// }
+
+// export default Ranking
