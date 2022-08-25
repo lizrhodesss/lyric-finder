@@ -16,7 +16,7 @@ function Search({songs}) {
 
   return (
     <div className="App">
-      <h1>Search Lyrics to Find a Song</h1>
+      <h2 className="header">Search Lyrics to Find a Song</h2>
       <input className="title" type="text" placeholder='Search Lyrics...' onChange={(e) => onSearch(e)} />
       {filteredSongs.map(song => (<SongCard song={song} setSearch={setSearch} search={search} key={song.id} />))}
     </div>

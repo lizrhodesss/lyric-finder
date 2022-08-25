@@ -5,8 +5,12 @@ import Form from './Components/Form';
 import Search from './Components/Search';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from './Components/Home'
+
+
+
 import Ranking from './Components/Ranking';
 // import SongCard from './SongCard'
+
 
 function App() {
 
