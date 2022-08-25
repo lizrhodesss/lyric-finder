@@ -1,19 +1,37 @@
 import React, { useState } from "react"
 
-function SongCard ({song, rankUp}) {
+// function RankCard ({song, songs, rankUp}) {
 
-    let [songRank, setSongRank] = useState(0)
+    
     
 
-    // const rankUp = () => {
-    //     setSongRank(songRank + 1)
-    //     console.log(songRank)
-    // }
+    // fetch(`http://localhost:8004/songs/${otherID}`, {
+    // method: "PATCH",
+    // headers: {
+    //     "Content-Type": "application.json"
+    // },
+    // body: JSON.stringify({
+    //     ranking: `${otherRank}`,
+    // })
+    // })
+    // .then(response => response.json())
+    // .then(data => console.log(data))
 
-    // const rankDown = () => {
-    //     setSongRank(songRank - 1)
-    //     console.log(songRank)
-    // }
+
+// function rankDown() {
+//     setCurrentRank(currentRank + 1)
+//     console.log(currentRank)
+// }
+
+// fetch("http://localhost:8004/songs", {
+//     method: "PATCH",
+//     headers: {
+//         "Content-Type": "application.json"
+//     },
+//     body: JSON.stringify()
+// })
+// .then(response => response.json())
+// .then()
 
   
 
@@ -21,16 +39,17 @@ function SongCard ({song, rankUp}) {
     
 
 
-return (
-    <li className="rankedTitles">
-        {song.title}<br></br>
-        <button className='rankedButtonUp' onClick={rankUp}>Up</button> 
-         <button className='rankedButtonDown' >Down</button> 
-    </li>
-)
-}
+// return (
+//     <div className="rankedTitles">
+//         {song.title}<br></br>
+//         <button onClick={() => rankUp(song)} className='rankedButtonUp' >Up</button> 
+//          <button className='rankedButtonDown' >Down</button> 
+//     </div>
+// )
+// }
 
 
 
 
-export default SongCard
+
+// export default RankCard

@@ -2,6 +2,7 @@ import React, { useState } from "react"
 
 function SongCard ({song}) {
     const [showLyrics, setShowLyrics] = useState(false)
+
     const [likeToggle, setLikeToggle] = useState(true)
 
     const handleLyrics= () => {
@@ -62,6 +63,7 @@ function SongCard ({song}) {
 //     </div>
 // )
 // }
+
 
 
 
