@@ -185,3 +185,26 @@ button{
   grid-template-columns:1fr 1fr 1fr;
   grid-auto-rows: minmax(100px, auto)
 } */
+
+.rankedButtonUp{
+  width:50px;
+  height: 20px;
+  font-size: 10px;
+  
+}
+
+.rankedButtonDown{
+  width:50px;
+  height: 20px;
+  font-size: 10px;
+}
+
+.rankedNumbers{
+  padding-left: 700px;
+}
+
+
+.rankedTitles{
+  padding-right: 900px
+}
+

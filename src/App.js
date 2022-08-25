@@ -7,11 +7,14 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from './Components/Home'
 
 
+
+import Ranking from './Components/Ranking';
+// import SongCard from './SongCard'
+
+
 function App() {
 
   let [songs, setSongs] = useState([])
-
-
 
   useEffect(() => {
     fetch("http://localhost:8004/songs")
@@ -19,8 +22,6 @@ function App() {
     .then(data => setSongs(data))
   }, [])
  
-
-  console.log(songs)
 
   return (
     <Router>
@@ -35,6 +36,9 @@ function App() {
           </Route>
           <Route path="/search">
             <Search songs={songs}/>
+          </Route>
+          <Route path="/ranking">
+            <Ranking songs={rankedSongs} setSongs={setSongs} rankUp={rankUp}/>
           </Route>
         </Switch>
       </div>

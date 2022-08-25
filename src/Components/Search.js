@@ -7,7 +7,7 @@ function Search({songs}) {
   const [search, setSearch] = useState("")
 
   let filteredSongs = songs.filter(song => {
-    return song.lyrics.toLowerCase().includes(search.toLowerCase())
+    return song.title.toLowerCase().includes(search.toLowerCase())
   })
 
   const onSearch = (e) => {
