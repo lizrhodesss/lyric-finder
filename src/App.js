@@ -8,9 +8,6 @@ import Home from './Components/Home'
 
 
 
-import Ranking from './Components/Ranking';
-// import SongCard from './SongCard'
-
 
 function App() {
 
@@ -36,9 +33,6 @@ function App() {
           </Route>
           <Route path="/search">
             <Search songs={songs}/>
-          </Route>
-          <Route path="/ranking">
-            <Ranking songs={rankedSongs} setSongs={setSongs} rankUp={rankUp}/>
           </Route>
         </Switch>
       </div>
